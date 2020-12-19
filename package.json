@@ -29,7 +29,7 @@
     "medis-react-codemirror": "^1.1.1",
     "redis-commands": "^1.5.0",
     "ssh2": "^0.8.9",
-    "xterm": "^3.13.1"
+    "xterm": "^3.14.5"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
