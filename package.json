@@ -80,6 +80,6 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.31.0",
     "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^4.0.0"
   }
 }
