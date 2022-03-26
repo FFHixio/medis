@@ -11,7 +11,9 @@
     "build": "rm -rf dist && webpack",
     "watch": "WEBPACK_WATCH=true npm run build",
     "start": "electron .",
-    "pack": "NODE_ENV=production npm run build && node bin/pack.js"
+    "pack": "NODE_ENV=production npm run build && node bin/pack.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,8 @@
     "medis-react-codemirror": "^1.1.1",
     "redis-commands": "^1.5.0",
     "ssh2": "^0.8.9",
-    "xterm": "^3.13.1"
+    "xterm": "^3.13.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -81,5 +84,6 @@
     "webpack": "^4.31.0",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.2"
-  }
+  },
+  "snyk": true
 }
